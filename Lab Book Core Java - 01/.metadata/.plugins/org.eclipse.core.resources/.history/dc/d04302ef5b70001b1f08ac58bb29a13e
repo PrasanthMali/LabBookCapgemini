@@ -1,0 +1,10 @@
+package com.cg.lb.ui;
+
+public class FibbSeries {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

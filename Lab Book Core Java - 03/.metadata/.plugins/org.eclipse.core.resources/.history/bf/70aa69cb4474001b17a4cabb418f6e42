@@ -1,0 +1,10 @@
+package com.cg.lb3.ui;
+
+public class PositiveString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
