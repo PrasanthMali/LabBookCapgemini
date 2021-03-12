@@ -1,0 +1,36 @@
+package com.cg.tsw.ui;
+
+import java.util.*;
+
+public class CalculateStudentGrade {
+	public static void main(String []args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter marks in first subject : ");
+		double studentFirstMarks=sc.nextDouble();
+		System.out.println("Enter marks in second subject : ");
+		double studentSecondMarks=sc.nextDouble();
+		System.out.println("Enter marks in third subject : ");
+		double studentThirdMarks=sc.nextDouble();
+		double averageOfAllThreeStudentMarks=(studentFirstMarks+studentSecondMarks+studentThirdMarks)/3.0;
+		
+		if(studentFirstMarks >=35 && studentSecondMarks>=35 && studentThirdMarks>=35) {
+			if(averageOfAllThreeStudentMarks>70) {
+				System.out.println("E grade");
+			}else if(averageOfAllThreeStudentMarks>=60 && averageOfAllThreeStudentMarks<70) {
+				System.out.println("A grade!");
+			}else if(averageOfAllThreeStudentMarks>=50 && averageOfAllThreeStudentMarks<60) {
+				System.out.println("B grade!");
+			}
+			else if(averageOfAllThreeStudentMarks>=35 && averageOfAllThreeStudentMarks<50) {
+				System.out.println("C grade!");
+			}
+			else {
+				System.out.println("Fail!");
+			}
+		}
+		else {
+			System.out.println("Marks is less then 35!");
+		}
+		sc.close();
+	}
+}

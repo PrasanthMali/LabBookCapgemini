@@ -1,0 +1,9 @@
+package com.cg.tsw.model;
+
+public class Account {
+
+	public Account() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

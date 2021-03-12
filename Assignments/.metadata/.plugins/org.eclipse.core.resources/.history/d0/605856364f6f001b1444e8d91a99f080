@@ -1,0 +1,43 @@
+package com.cg.tsw.model;
+
+public class Account {
+	private long accNumber;
+	private String fullName;
+	private double balance;
+
+	public Account() {
+		/*default constructor*/
+	}
+
+	public Account(long accNumber, String fullName, double balance) {
+		super();
+		this.accNumber = accNumber;
+		this.fullName = fullName;
+		this.balance = balance;
+	}
+
+	public long getAccNumber() {
+		return accNumber;
+	}
+
+	public void setAccNumber(long accNumber) {
+		this.accNumber = accNumber;
+	}
+
+	public String getFullName() {
+		return fullName;
+	}
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	
+	
+	
+
+}
