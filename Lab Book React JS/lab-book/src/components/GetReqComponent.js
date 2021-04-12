@@ -31,8 +31,6 @@ class AdminListComponent extends React.Component {
                         <tr>
                             <th>AdminId</th>
                             <th>AdminName</th>
-                            <th>Update</th>
-                            <th>Delete</th>
                             <th>View</th>
                         </tr>
                     </thead>
@@ -43,16 +41,10 @@ class AdminListComponent extends React.Component {
                                     <td>{admins.adminId}</td>
                                     <td>{admins.adminName}</td>
                                     <td>
-                                    <Link to={`/updateadmin`}>Update</Link>
-                                    </td>
-                                    <td>
-                                    <Link to={`/deleteadmin`}>Delete</Link>
-                                    </td>
-                                    <td>
                                     <Link to={`/getadmin/${admins.adminId}`}>View</Link>
                                     </td>
                                 </tr>
-                            ))}
+                            ))};
                     </tbody>
                 </Table>
 
